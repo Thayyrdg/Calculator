@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <div id="resultIn" class="result"></div>
+        <div class="btn">
+          <button
+            id="clearAll"
+            class="number operand-detailed"
+            onclick="clean()"
+          >
+            C
+          </button>
+          <button
+            id="clearOne"
+            class="number clearOne operand-detailed"
+            onclick="backspace()"
+          >
+            CE
+          </button>
+          <button
+            id="operand"
+            class="number operand-detailed"
+            onclick="insert('±')"
+          >
+            ±
+          </button>
+          <button
+            id="operand"
+            class="number operand-detailed"
+            onclick="insert('%')"
+          >
+            %
+          </button>
+          <button class="number" onclick="insert('7')">7</button>
+          <button class="number" onclick="insert('8')">8</button>
+          <button class="number" onclick="insert('9')">9</button>
+          <button
+            id="operand"
+            class="number operand-detailed"
+            onclick="insert('*')"
+          >
+            x
+          </button>
+          <button class="number" onclick="insert('4')">4</button>
+          <button class="number" onclick="insert('5')">5</button>
+          <button class="number" onclick="insert('6')">6</button>
+          <button
+            id="operand"
+            class="number operand-detailed"
+            onclick="insert('+')"
+          >
+            +
+          </button>
+          <button class="number" onclick="insert('1')">1</button>
+          <button class="number" onclick="insert('2')">2</button>
+          <button class="number" onclick="insert('3')">3</button>
+          <button
+            id="operand"
+            class="number operand-detailed"
+            onclick="insert('-')"
+          >
+            -
+          </button>
+          <button id="none" class="number"></button>
+          <button class="number" onclick="insert('0')">0</button>
+          <button id="none" class="number"></button>
+          <button class="number operand-detailed equal" onclick="confirm()">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
